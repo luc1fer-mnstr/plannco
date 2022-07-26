@@ -10,6 +10,23 @@ body{
 	--secondary-color: hsla(203, 100%, 13%, 1);
 }
 
+/*Start Back To Top*/
+
+.btn-backtotops{
+	background: var(--primary-color);
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+
+	z-index: 100;
+}
+
+/*End Back To Top*/
+
 /*Start Header*/
 
 header{
@@ -380,3 +397,157 @@ ul.clientlists li:hover{
 }
 
 /*End Clients*/
+
+/*Start Customers*/
+
+.customers{
+	background: linear-gradient(
+		rgba(0, 0, 0, 0),
+		rgba(0, 0 ,0, 1)
+		),url('../assets/img/banner/banner3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*Ens customers*/
+
+
+/*Start Quote*/
+
+.quotes{
+	background: var(--secondary-color);
+	padding: 30px 50px;
+	margin: -30px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.quotes .infos{
+	display: flex;
+}
+
+.quotes .btn-calls{
+	width: 170px;
+	height: 50px;
+	background: var(--primary-color);
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 15px;
+	line-height: 50px;
+	border: 0;
+	border-radius: 100px;
+	padding: 0;		/*cuz of bs btn effect*/
+	transform: translateY(-1px);
+
+	transition: all .3s;
+}
+
+.quotes .btn-calls:hover{
+	box-shadow: -3px 3px 3px #444;
+	transform: translate(0);
+}
+
+.phoneicon{
+	width: 30px;
+}
+
+@media(max-width: 768px){
+	.phoneicon{
+		width: 50px;
+	}
+}
+
+/*End Quote*/
+
+
+/*Start Furniture Services*/
+
+.furicons img{
+	width: 70px;
+}
+
+.furicons div:nth-of-type(even){
+	background: #f1f1f1;
+}
+
+/*End Furniture Services*/
+
+
+/*Start Contact */
+
+.contacts{
+	background: linear-gradient(
+			100deg,
+			rgba(0, 0, 0, 0.8) 50%,
+			rgba(0, 0, 0, 0.5) 30%,
+			transparent 70%
+		), url("../assets/img/banner/banner3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.contacts .inputs{
+	background: transparent;
+	border-color: transparent;
+	border-bottom: 2px solid #ccc;
+	border-radius: 0;
+	color: #fff;
+
+	transition: all .8s;
+}
+
+.contacts .inputs:focus{
+	box-shadow: none;
+	border-bottom: 2px solid var(--primary-color);
+}
+
+.contacts .submit-btns{
+	background: var(--primary-color);
+	color: #fff;
+	border: none;
+
+	transition: all .3s;
+}
+
+.contacts .submit-btns:hover{
+	background: var(--secondary-color);
+	color: #fff;
+}
+
+.labels{
+	color: #e2e2e2;
+	display: block;
+	margin-top: -60px;
+	margin-left: 10px;
+
+	transition: all .5s;
+}
+
+.inputs:placeholder-shown + .labels{
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+/*End Contact*/
+
+/*Start Footer*/
+
+.footerlinks li a{
+	color: #e2e2e2;
+	text-decoration: none;
+	font-size: 13px;
+	transition: all .3s;
+}
+
+.footerlinks li a:hover{
+	border-bottom: 1px solid orange;
+	letter-spacing: 1px;
+}
+
+/*End Footer*/
